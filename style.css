@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header,
+.end {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: skyblue;
+}
+header h1:hover {
+  color: rgb(212, 96, 116);
+  border: 20px solid #333;
+  padding: 10vh;
+}
+.end h1 {
+  cursor: pointer;
+  font-size: 50px;
+}
+.end h1:hover {
+  letter-spacing: 30px;
+}
+
+header h1 {
+  font-size: 60px;
+  cursor: pointer;
+  color: #333;
+  animation: drop 3s ease; /* Make things beautiful */
+}
+
+.animation {
+  height: 100vh;
+  background-image: url(img/Sun.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.paper-plane {
+  height: 180px;
+  top: 50%;
+  position: absolute;
+  left: 0%;
+}
+footer {
+  width: 100%;
+  background-color: #32323267;
+  color: #f2f2f2;
+  height: 8vh;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 1vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 1px;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+/* T H A N K  Y O U */
